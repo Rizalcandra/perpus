@@ -9,7 +9,7 @@
 
 **Perpustakaan Desa** adalah aplikasi web berbasis PHP Native (tanpa framework) yang dirancang untuk memudahkan warga desa dan pengelola perpustakaan dalam mengelola peminjaman dan pendataan buku secara digital. Aplikasi ini mendukung tiga peran pengguna: **Admin**, **Petugas**, dan **Anggota** dengan fitur lengkap mulai dari manajemen data buku, peminjaman, pengembalian, hingga pelaporan.
 
-Aplikasi dikembangkan sesuai **102 butir checklist UKK 2026** untuk kompetensi Pengembangan Aplikasi Peminjaman Buku, memenuhi standar keamanan (CSRF, XSS, SQL Injection), dan menerapkan konsep database lanjutan (Stored Procedure, Function, Trigger, View, Transaction).
+Aplikasi dikembangkan sesuai **102 checklist UKK** untuk kompetensi Pengembangan Aplikasi Peminjaman Buku, memenuhi standar keamanan (CSRF, XSS, SQL Injection), dan menerapkan konsep database lanjutan (Stored Procedure, Function, Trigger, View, Transaction).
 
 ---
 
@@ -55,12 +55,12 @@ Aplikasi dikembangkan sesuai **102 butir checklist UKK 2026** untuk kompetensi P
    - Klik **Go** (Execute)
    - Database `perpustakaan_desa` beserta tabel, stored procedure, function, trigger, dan data awal akan otomatis terbuat
 
-4. **Konfigurasi Koneksi** (Opsional)  
+4. **Konfigurasi Koneksi** 
    Buka file `koneksi.php`, sesuaikan jika diperlukan:
    ```php
    $DB_HOST = 'localhost';
    $DB_USER = 'root';
-   $DB_PASS = '';        // Default XAMPP kosong
+   $DB_PASS = '';        
    $DB_NAME = 'perpustakaan_desa';
    ```
 
@@ -79,8 +79,8 @@ Aplikasi dikembangkan sesuai **102 butir checklist UKK 2026** untuk kompetensi P
 ```
 perpustakaan-desa/
 │
-├── config.js                        # Konfigurasi JavaScript (UKK 68)
-├── data.json                        # Data konfigurasi sampel (UKK 71)
+├── config.js                        # Konfigurasi JavaScript 
+├── data.json                        # Data konfigurasi sampel 
 ├── database.sql                     # Schema DB, SP, Function, Trigger, VIEW, Seed Data
 ├── config.php                       # Helper: session, auth, CSRF, format, upload, logging
 ├── koneksi.php                       # Koneksi database mysqli procedural
@@ -108,7 +108,7 @@ perpustakaan-desa/
 │   ├── js/
 │   │   └── main.js                    # JS: form validation, search debounce, sidebar toggle
 │   ├── sound/
-│   │   └── notif.mp3                  # Audio notifikasi suara (UKK 10)
+│   │   └── notif.mp3                  # Audio notifikasi suara 
 │   └── icon/
 │       └── favicon.svg                # Ikon aplikasi SVG
 │
@@ -142,15 +142,15 @@ perpustakaan-desa/
 │   └── wireframe.md                   # Dokumentasi Wireframe desain UI
 │
 ├── pengujian/
-│   ├── test_case.md                   # Test Case lengkap (20+ kasus)
+│   ├── test_case.md                   # Test Case lengkap 
 │   ├── skenario_pengujian.md          # Skenario pengujian sistem
 │   ├── data_uji.md                    # Dokumentasi data uji / seed data
-│   └── evaluasi.md                     # Evaluasi diri checklist UKK 102 butir
+│   └── evaluasi.md                     # Evaluasi diri
 │
-├── gambar/                            # Gambar cover buku (bk1.jpg - bk11.jpg, bk1.png)
+├── gambar/                            # Gambar cover buku 
 ├── uploads/                           # Folder upload gambar buku (generated)
 ├── logs/                              # Log error & aktivitas (auto-generated)
-└── README.md                          # File ini — Dokumentasi deployment (UKK 67-80)
+└── README.md                          # File ini — Dokumentasi deployment 
 ```
 
 ---
@@ -299,7 +299,7 @@ perpustakaan-desa/
 | Test Case | `pengujian/test_case.md` | 20+ test case lengkap |
 | Skenario Pengujian | `pengujian/skenario_pengujian.md` | Skenario pengujian per modul |
 | Data Uji | `pengujian/data_uji.md` | Dokumentasi seed data & data uji |
-| Evaluasi | `pengujian/evaluasi.md` | Evaluasi diri 102 butir UKK |
+| Evaluasi | `pengujian/evaluasi.md` | Evaluasi diri 102 List UKK |
 
 ---
 

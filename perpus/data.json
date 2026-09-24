@@ -1,0 +1,101 @@
+{
+    "appName": "Perpustakaan Desa",
+    "version": "2.0",
+    "description": "Sistem Informasi Perpustakaan Desa - Aplikasi Peminjaman Buku Berbasis Web",
+    "year": "2025/2026",
+    "exam": "UKK 2026 - Rekayasa Perangkat Lunak (RPL)",
+    "settings": {
+        "maxPinjam": 2,
+        "finePerDay": 5000,
+        "loanDays": 14,
+        "jamBuka": "08:00",
+        "jamTutup": "16:00",
+        "hariBuka": "Senin-Jumat",
+        "hariTutup": "Sabtu-Minggu"
+    },
+    "roles": {
+        "admin": {
+            "description": "Administrator sistem, akses penuh",
+            "menu": ["dashboard", "buku", "kategori", "penerbit", "anggota", "peminjaman", "berita", "pengumuman", "laporan", "pengaturan", "user_online"]
+        },
+        "petugas": {
+            "description": "Petugas perpustakaan, akses terbatas",
+            "menu": ["dashboard_petugas", "buku", "kategori", "penerbit", "anggota", "peminjaman", "berita", "pengumuman"]
+        },
+        "anggota": {
+            "description": "Anggota perpustakaan, akses publik",
+            "menu": ["katalog", "cari", "pinjam", "pengembalian", "akun"]
+        }
+    },
+    "categories": [
+        { "id": 1, "name": "Fiksi", "slug": "fiksi", "icon": "bi-book" },
+        { "id": 2, "name": "Non-Fiksi", "slug": "non-fiksi", "icon": "bi-journal-text" },
+        { "id": 3, "name": "Sains", "slug": "sains", "icon": "bi-lightbulb" },
+        { "id": 4, "name": "Biografi", "slug": "biografi", "icon": "bi-person-badge" },
+        { "id": 5, "name": "Pelajaran", "slug": "pelajaran", "icon": "bi-mortarboard" },
+        { "id": 6, "name": "Ensiklopedia", "slug": "ensiklopedia", "icon": "bi-collection" }
+    ],
+    "publishers": [
+        { "id": 1, "name": "Gramedia" },
+        { "id": 2, "name": "Erlangga" },
+        { "id": 3, "name": "Balai Pustaka" },
+        { "id": 4, "name": "Republika" },
+        { "id": 5, "name": "Andi Offset" },
+        { "id": 6, "name": "Penerbit ITB" },
+        { "id": 7, "name": "Bentang Pustaka" },
+        { "id": 8, "name": "Kompas Gramedia" }
+    ],
+    "sampleBooks": [
+        {
+            "isbn": "LP-001-001",
+            "title": "Laskar Pelangi",
+            "author": "Andrea Hirata",
+            "categoryId": 1,
+            "publisherId": 7,
+            "year": 2005,
+            "pages": 529,
+            "stock": 5,
+            "popular": true
+        },
+        {
+            "isbn": "BM-002-001",
+            "title": "Bumi Manusia",
+            "author": "Pramoedya Ananta Toer",
+            "categoryId": 1,
+            "publisherId": 1,
+            "year": 1980,
+            "pages": 535,
+            "stock": 3,
+            "popular": true
+        },
+        {
+            "isbn": "FD-003-001",
+            "title": "Fisika Dasar Universitas",
+            "author": "Halliday & Resnick",
+            "categoryId": 3,
+            "publisherId": 6,
+            "year": 2018,
+            "pages": 800,
+            "stock": 4,
+            "popular": false,
+            "isNew": true
+        }
+    ],
+    "sampleMembers": [
+        {
+            "role": "admin",
+            "email": "admin@perpustakaan.id",
+            "name": "Administrator"
+        },
+        {
+            "role": "petugas",
+            "email": "petugas@perpustakaan.id",
+            "name": "Petugas Perpustakaan"
+        },
+        {
+            "role": "anggota",
+            "email": "budi@email.com",
+            "name": "Budi Santoso"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+# Perpustakaan Digital Sekolah - Konfigurasi Apache
+# File: .htaccess
+
+# Aktifkan Rewrite Engine
+RewriteEngine On
+
+# Set base directory
+RewriteBase /perpustakaan-digital/
+
+# Proteksi file sensitif - tidak bisa diakses langsung
+<FilesMatch "^(config|koneksi|database)\.(php|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Proteksi partials - tidak bisa diakses langsung
+RedirectMatch 403 /partials/
+RedirectMatch 403 /admin/_layout\.php
+RedirectMatch 403 /admin/_footer\.php
+
+# Default charset
+AddDefaultCharset UTF-8
+
+# Set index.php sebagai default
+DirectoryIndex index.php
+
+# Remove .php extension (optional)
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^(.*)$ $1.php [L]
+
+# Error documents
+ErrorDocument 404 index.php
+
+# Prevent directory listing
+Options -Indexes
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# PHP settings (if allowed)
+<IfModule mod_php.c>
+    php_value display_errors 0
+    php_value log_errors 1
+    php_value upload_max_filesize 2M
+    php_value post_max_size 8M
+    php_value session.cookie_httponly 1
+    php_value session.use_strict_mode 1
+</IfModule>

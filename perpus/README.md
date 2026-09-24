@@ -318,8 +318,6 @@ Jika terjadi error:
 
 ## 12. Lisensi
 
-Proyek ini dikembangkan untuk keperluan **Ujian Kompetensi Keahlian (UKK) 2026** — Kompetensi Rekayasa Perangkat Lunak (RPL).
+Proyek ini dikembangkan untuk keperluan **Ujian Kompetensi Keahlian (UKK) 2026** — Rekayasa Perangkat Lunak (RPL).
 
 ---
-
-*Perpustakaan Desa v2.0 — UKK 2026 RPL*

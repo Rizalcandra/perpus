@@ -303,7 +303,7 @@ perpustakaan-desa/
 
 ---
 
-## 12. Debugging
+## 11. Debugging
 
 Jika terjadi error:
 
@@ -316,7 +316,7 @@ Jika terjadi error:
 
 ---
 
-## 13. Lisensi
+## 12. Lisensi
 
 Proyek ini dikembangkan untuk keperluan **Ujian Kompetensi Keahlian (UKK) 2026** — Kompetensi Rekayasa Perangkat Lunak (RPL).
 

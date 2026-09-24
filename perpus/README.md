@@ -303,31 +303,6 @@ perpustakaan-desa/
 
 ---
 
-## 11. Fitur Lengkap
-
-| # | Fitur | Admin | Petugas | Anggota |
-|---|-------|:-----:|:-------:|:-------:|
-| 1 | Login Multi-Role | ✅ | ✅ | ✅ |
-| 2 | Dashboard Statistik | ✅ | ✅ | — |
-| 3 | CRUD Data Buku | ✅ | ✅ | ❌ |
-| 4 | CRUD Kategori | ✅ | ✅ | ❌ |
-| 5 | CRUD Penerbit | ✅ | ✅ | ❌ |
-| 6 | CRUD Anggota | ✅ | ✅ | ❌ |
-| 7 | Peminjaman Buku | ✅ | ✅ | ✅ |
-| 8 | Pengembalian Buku | ✅ | ✅ | ✅ |
-| 9 | Katalog & Search | ✅ | ✅ | ✅ |
-| 10 | Komentar & Rating | ✅ | ✅ | ✅ |
-| 11 | Grafik Statistik | ✅ | ✅ | ❌ |
-| 12 | Pengumuman | ✅ | ✅ | 📖 |
-| 13 | Berita | ✅ | ✅ | 📖 |
-| 14 | Cetak Struk | ✅ | ✅ | ✅ |
-| 15 | Pengaturan Sistem | ✅ | ❌ | ❌ |
-| 16 | User Online Monitoring | ✅ | ✅ | ❌ |
-| 17 | Profil & Edit Profil | ✅ | ✅ | ✅ |
-| 18 | Notifikasi Suara | ✅ | ✅ | ✅ |
-
----
-
 ## 12. Debugging
 
 Jika terjadi error:
